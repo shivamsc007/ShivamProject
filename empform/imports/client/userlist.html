@@ -1,0 +1,35 @@
+<template name="Userlist">
+
+<h3>User List</h3>    <button name="CreateUser" id="create_user">Create User</button>
+<br><br>
+
+<table border="2" style="width: 100%;background:violet;">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Department</th>
+    <th>Address</th>
+    <th>User Image</th>
+</tr>
+
+{{#each user}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{email}}</td>
+    <td>{{gender}}</td>
+    <td>{{department}}</td>
+    <td>
+      {{address.Line1}}<br>
+        {{address.Line2}}<br>
+         {{address.Pin}}<br>
+      {{address.District}}<br>
+        {{address.State}}<br>
+       {{address.Country}}
+     </td>
+    <td><img src="{{imageData.[0].userImage}}"/></td>
+  </tr>
+  {{/each}}
+
+ </table>
+</template>

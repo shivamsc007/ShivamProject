@@ -1,0 +1,24 @@
+<template name="Tasklist">
+
+<h2>Task List</h2>   <button name="CreateTasks" id="create_tasks">Create Tasks</button>
+<br><br>
+
+<table border="2" style="width: 100%; background:violet;">
+  <tr>
+    <th>Task Name</th>
+    <th>Date</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+</tr>
+
+{{#each tasksData}}
+  <tr>
+    <td>{{tasks}}</td>
+    <td>{{date.date1}} / {{date.date2}}</td>
+    <td>{{userlist}}</td>
+    <td>{{Status}}</td>
+  </tr>
+  {{/each}}
+
+ </table>
+</template>

@@ -1,0 +1,26 @@
+<template name="User_Dashboard">
+{{#if user}}
+<h2>User Dashboard</h2> 
+
+ <p>Hi, User</p>
+ 
+
+<table border="2" style="width: 100%;background:violet;">
+  <tr>
+    <th>Task Name</th>
+    <th>Date</th>
+  </tr>
+
+{{#each tasksData1}}
+  <tr>
+    <td>{{tasks}}</td>
+    <td>{{date.date1}} / {{date.date2}}</td>
+  </tr>
+{{/each}}
+
+ </table>
+ <br><br>
+
+<p><a href="/" id="logout1">Logout</a></p>
+{{/if}}
+</template> 

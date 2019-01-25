@@ -1,0 +1,12 @@
+import './main.html';
+import './subscription.js';
+import '../imports/lib/admindashboard.js';
+import '../imports/lib/createtask.js';
+import '../imports/lib/createuser.js';
+import '../imports/lib/forgotpassword.js';
+import '../imports/lib/login.js';
+import '../imports/lib/register.js';
+import '../imports/lib/route.js';
+import '../imports/lib/tasklist.js';
+import '../imports/lib/userdashboard.js';
+import '../imports/lib/userlist.js';

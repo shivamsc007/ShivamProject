@@ -1,0 +1,86 @@
+<template name="Create_User">
+<h3>User Details Forms</h3>
+
+<form class="submit_form" action="/userlist.html" target="/userlist" method="post"  >
+
+Name:
+<input type="text" id="name" placeholder="Enter Your Name" value="" required>
+<br><br>
+
+Phone:
+<input type="tel" id="phone" placeholder="Enter Your Phone" maxlength="10" value="" required>
+<br><br>
+
+Email:
+<input type="email" name="email" id="email2" placeholder="Enter Your Email" value="" required >
+<br><br>
+
+Password:
+<input type="Password" name="pwd"  id="pwd3" value="" required>
+<br><br>
+
+Confirm Password:
+<input type="Password" name="pwd" id="pwd4" value="" required>
+<br><br>
+
+Gender:
+<input id="male" type="radio" name="gender" value="Male" checked> Male
+<input id="female" type="radio" name="gender" value="Female"  > Female
+<input id="others" type="radio" name="gender" value="Other" > Other
+<br><br>
+
+Department:
+<select id="department">
+<option>IT Department</option>
+<option>Account Department</option>
+<option>Billing Department</option>
+<option>Marketing department</option>
+<option>Sales Department</option>
+</select>
+<br><br>
+
+Address:
+Line 1:
+<input id="address" type="text" placeholder="Enter Your Address">
+<br>
+Line 2:
+<input id="address1" type="text" placeholder="Enter Your Address">
+<br><br>
+
+Pin:
+<input id="pin" type="pin" placeholder="Enter Your Pin" value="">
+<br><br>
+
+District:
+<input id="district" type="text" placeholder="Enter Your District" value="">
+<br><br>
+
+State:
+<select id="state">
+<option>Punjab</option>
+<option>Uttar Pradesh</option>
+<option>Gujarat</option>
+<option>West Bengal</option>
+<option>Himachal Pradesh</option>
+</select>
+<br><br>
+
+Country:
+<select id="country">
+<option>India</option>
+<option>Australia</option>
+<option>France</option>
+<option>U.S.A.</option>
+<option>Switzerland</option>
+</select>
+<br><br>
+
+User Image:
+<input type="file"  id="userImage" name="userImage" >
+<br><br>
+
+<input type="submit" name="submitform" id="submit_form" value="Submit">
+
+
+</form>
+</template>

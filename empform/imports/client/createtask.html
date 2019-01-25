@@ -1,0 +1,27 @@
+<template name="Create_Task">
+<h2>Tasks</h2>
+
+     <form class="Tasks" >
+
+     Tasks:
+     <input type="text" name="Tasks" id="tasks" value="">
+     <br><br>
+
+     Date:
+     <input type="date" name="date1" id="getdate" min="01/01/2019"> / <input type="date" name="date2" id="getdate1" max="31/12/2020">
+     <br><br>
+
+     User List:
+     <select id="userlist1">
+     {{#each user1}}
+     <option>
+     {{name}}
+     </option>
+     {{/each}}
+     </select>
+     <br><br>
+
+     <input type="submit" name="submittasks" id="submittasks" value="Submit">
+
+     </form>
+</template>
